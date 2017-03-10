@@ -1,0 +1,75 @@
+.order-notification {
+  display: none;
+}
+
+.order-notification-show {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 270px;
+  height: 400px;
+  margin-left: -170px;
+  margin-top: -230px;
+  padding: 50px 30px 20px;
+  background: #dfe0e8;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-500px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(230px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-50px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(50px);
+  }
+}
+.order-title,
+.order-description {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.callback-btn {
+  display: block;
+  color: $secondary-color;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  margin: 30px;
+  margin-bottom: 50px;
+  background-image: linear-gradient( to right, #f63d3c 0%, #f77138 100%);
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.order-userdata input {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+.order-cancel {
+  text-decoration: none;
+  color: $base-color;
+  background: #cccccc;
+  border: 2px solid gray;
+  padding: 10px 20px;
+}

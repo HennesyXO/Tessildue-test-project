@@ -1,0 +1,92 @@
+.catalog-item {
+
+  height: 16%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  &__inner {
+    padding: 25px;
+  }
+
+  &__inner img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__number {
+    width: 49%;
+    font-size: 0.8em;
+  }
+  &__price {
+    width: 49%;
+    color: $base-color;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: right;
+  }
+}
+
+.more {
+  flex-grow: 1;
+  padding: 10px 0;
+  display: block;
+  background-color: #ffffff;
+  color: $base-color;
+  border: 1px solid #e1e1e1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.more:hover {
+  color: #ffffff;
+  background: $base-color;
+  font-weight: bold;
+}
+
+.buy {
+  flex-grow: 1;
+  display: block;
+  padding: 10px 0;
+  background-image: linear-gradient( to right, #f63d3c 0%, #f77138 100%);
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.buy:hover {
+  color: $base-color;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+@media #{$tablet-widths} {
+  .catalog-item {
+    width: 30%;
+
+    &__buttons {
+
+    }
+  }
+  .more {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .buy {
+    flex-grow: 1;
+    width: 50%;
+  }
+}

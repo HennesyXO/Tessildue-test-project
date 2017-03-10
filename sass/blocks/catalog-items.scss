@@ -1,0 +1,13 @@
+.catalog-items {
+    display: flex;
+    flex-direction: column;
+}
+
+@media #{$tablet-widths} {
+  .catalog-items {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+}

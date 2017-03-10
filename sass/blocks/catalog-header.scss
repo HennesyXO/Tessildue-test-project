@@ -1,0 +1,17 @@
+.catalog-header {
+  padding-top: 6%;
+  padding-bottom: 4.7%;
+  text-align: center;
+
+  &__title {
+    padding-bottom: 2%;
+    text-transform: uppercase;
+  }
+  &__title span {
+    color: $alternative-color;
+  }
+
+  &__text {
+    font-size: 1.2em;
+  }
+}

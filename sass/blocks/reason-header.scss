@@ -1,0 +1,17 @@
+.reason-header {
+  padding-bottom: 5%;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.reason-header span {
+  color: $alternative-color;
+}
+
+@media #{$tablet-widths} {
+ .reason-header {
+    padding-bottom: 5%;
+}
+}
+
